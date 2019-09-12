@@ -6,3 +6,14 @@ This project was developed for the Hardware-Software Co-Design course. It consis
 
 ![Screenshot](images/CNN_architecture.png)
 
+## Input files
+
+**wb.bin** -> Binary file with 22 + 22*5*5 + 10 + 10*22*12*12 floating-point neural net weights 
+
+**t100-images-idx3-ubyte** -> Contains header (16 bytes) plus 100 example images (100*28*28 bytes)
+
+## Software version only
+
+In the sw-only folder, there are the C scripts that are supposed to run only in the FPGA ARM processor (using the Xilinx SDK toolchain). The performance obtained through this version works as a baseline for calculating the speed-up of the Hardware-Software version.
+
+## Hardware-Software version
