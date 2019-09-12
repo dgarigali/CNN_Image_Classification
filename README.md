@@ -41,6 +41,8 @@ The input data (images and weights) and the output data (output of each layer) a
 
 ## FPGA logic primitives
 
+As one can see, the bottleneck of the IP developed was the number of BRAM used (85%), which dit not allow parallelizing the first layer even more.
+
 |       Resource      |    LUT   |    FF    |   BRAM   |   DSP   |    
 |:--------------------|:---------|:---------|:---------|:--------|
 |      AXI DMA        |   1573   |   2218   |     3    |    0    |
